@@ -1,6 +1,10 @@
 # feed2json-server
 
+[![npm version](http://img.shields.io/npm/v/feed2json-server.svg)](https://www.npmjs.org/package/feed2json-server)
+
 Simple server for a feed2json service.
+
+It's simply a local [hapi](https://www.npmjs.com/package/hapi) implementation of [feed2json](https://www.npmjs.com/package/feed2json).
 
 ## Installation
 ```
