@@ -6,12 +6,12 @@ const test = require('tape');
 const fs = require('fs');
 const feed2jsonServer = require('../lib');
 
-
-let server;
 const feedServer = feed2jsonServer({
   port: 4201,
   host: 'localhost'
 });
+
+let server;
 
 test('setup', (t) => {
   server = http.createServer((request, response) => {
@@ -32,8 +32,7 @@ test('it should set up an rss test server', (t) => {
   })
 });
 
-
-test('it should get an convert an rss feed', (t) => {
+test('it should get and convert an rss feed', (t) => {
   t.plan(2);
   const url = 'http://localhost:4201/convert?url=http://localhost:1337/rss';
 
