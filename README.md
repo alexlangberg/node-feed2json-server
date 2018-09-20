@@ -19,6 +19,8 @@ Options might come later but it's also rather easy to simply hack the port numbe
 
 ## Examples
 
+With the server running, you can call these URLs:
+
 http://localhost:4201/example - an example of jsonfeed
 
 http://localhost:4201/convert?url=http://feeds.bbci.co.uk/news/rss.xml
