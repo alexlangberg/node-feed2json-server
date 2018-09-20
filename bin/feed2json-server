@@ -1,4 +1,8 @@
-const feed2jsonServer = require('./lib/index.js');
+#!/usr/bin/env node
+
+'use strict';
+
+const feed2jsonServer = require('../lib/index.js');
 
 const server = feed2jsonServer({
   port: 4201,
