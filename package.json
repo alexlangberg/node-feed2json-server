@@ -1,0 +1,39 @@
+{
+  "name": "feed2json-server",
+  "version": "1.0.0",
+  "description": "Simple server for a feed2json service.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node test/*.js",
+    "start": "node start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexlangberg/node-feed2json-server.git"
+  },
+  "keywords": [
+    "feed2json",
+    "rss",
+    "json",
+    "xml",
+    "conversion",
+    "server",
+    "service"
+  ],
+  "author": "Alex Langberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexlangberg/node-feed2json-server/issues"
+  },
+  "homepage": "https://github.com/alexlangberg/node-feed2json-server#readme",
+  "dependencies": {
+    "boom": "^7.2.0",
+    "feed2json": "^0.6.0",
+    "hapi": "^17.5.4",
+    "joi": "^13.6.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "tape": "^4.9.1"
+  }
+}
