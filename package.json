@@ -1,6 +1,6 @@
 {
   "name": "feed2json-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple server for a feed2json service.",
   "main": "lib/index.js",
   "scripts": {
