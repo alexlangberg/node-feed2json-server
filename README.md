@@ -6,6 +6,8 @@ Simple server for a feed2json service.
 
 It's simply a local [hapi](https://www.npmjs.com/package/hapi) implementation of [feed2json](https://www.npmjs.com/package/feed2json).
 
+CORS is enabled so it can be used as a feed backend.
+
 ## Installation
 ```
 npm install -g feed2json-server

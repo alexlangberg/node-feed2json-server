@@ -6,7 +6,8 @@ const feed2jsonServer = require('../lib/index.js');
 
 const server = feed2jsonServer({
   port: 4201,
-  host: 'localhost'
+  host: 'localhost',
+  routes: { cors: true }
 });
 
 const init = async () => {
