@@ -7,7 +7,7 @@ const fs = require('fs');
 const feed2jsonServer = require('../lib');
 
 const feedServer = feed2jsonServer({
-  port: 4201,
+  port: 4202,
   host: 'localhost'
 });
 
@@ -33,14 +33,15 @@ test('it should set up an rss test server', (t) => {
 });
 
 test('it should get and convert an rss feed', (t) => {
-  t.plan(2);
-  const url = 'http://localhost:4201/convert?url=http://localhost:1337/rss';
+  t.plan(3);
+  const url = 'http://localhost:4202/convert?url=http://localhost:1337/rss';
 
   req(url, (error, response, body) => {
     t.equal(200, response.statusCode);
 
     const json = JSON.parse(body);
-    t.equal("RSS Title", json.title);
+    t.equal('RSS Title', json.title);
+    t.equal('http://localhost:1337/rss', json._feed2json.url);
   })
 });
 
